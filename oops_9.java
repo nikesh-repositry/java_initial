@@ -1,3 +1,4 @@
+//this code consist the example which includes all the scopes in java 
 package oops;
 
 public class oops_9 {
