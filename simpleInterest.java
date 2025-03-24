@@ -1,3 +1,4 @@
+//simple program to find interest of any amount
 import java.sql.SQLOutput;
 import java.util.Scanner;
 public class simpleInterest{
