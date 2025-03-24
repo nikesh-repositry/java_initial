@@ -1,3 +1,4 @@
+//this program shows the working and concept of instance and static method
 package oops;
 
 public class oops_5 {
