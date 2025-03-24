@@ -1,4 +1,4 @@
-//this is a comment
+//this is a program to elustrate variables in java
 public class variables {
     public static void main(String[] args) {
         String a = "java";
