@@ -1,3 +1,4 @@
+//this is a program to understand basic code of constructor with its type
 package oops;
 
 // Main class to demonstrate constructors
