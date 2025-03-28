@@ -27,7 +27,10 @@ public class oops_13 {
         String first = input.nextLine();
         System.out.println("enter the age");
         int second = input.nextInt();
-        input.nextLine();
+        input.nextLine();// here this line is very useful and used many times
+        //whenever any input given nextint or nextdouble the input buffer takes it 
+        //and when you typed enter button it takes that enter as a input and nextline
+        //consider that enter as input and move forward so this is why we use it
 
         System.out.println("enter details of empolyee B");
         System.out.println("enter the name");
