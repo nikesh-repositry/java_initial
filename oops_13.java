@@ -1,3 +1,6 @@
+//this is basic code example to understand this keyword 
+//here input take name and age of two employee and this keyword helos
+//to set the current passed argument to the method
 package oops;
 import java.util.Scanner;
 class job{
