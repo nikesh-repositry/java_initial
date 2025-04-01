@@ -1,3 +1,4 @@
+//this is the example to demonstrate the concept of access modifiers in java
 package oops;
 
 class Example {
