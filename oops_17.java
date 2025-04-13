@@ -1,3 +1,4 @@
+//this is code to show non static inner class working
 package oops;
 
 public class oops_17 {
