@@ -1219,7 +1219,9 @@ Non-static Inner Class	When inner class needs access to outer class instance var
 Static Nested Class	When inner class doesn't need outer class instance (like a helper class).
 Method Local Inner Class	When class is only needed inside a method.
 Anonymous Inner Class	For one-time implementations (e.g., event listeners)
-25. SINGLETON CLASS
+
+
+25. SINGLETON CLASS------------------------------------------------------------
 A  singleton class is a design pattern that ensures only one instance of a class exists in the java virtual machine and provides a global point of access to it.
 Used for logging, driver objects, caching, thread pools, database connections etc. 
 Used when a single instance is needed to managed a shared resource like a database connection pool.
@@ -1323,7 +1325,7 @@ The simple example above is not thread-safe. In a multithreaded environment, it'
 MORE……………..
 
 
-26. IMMUTABLE CLASS
+26. IMMUTABLE CLASS----------------------------------------------
 An immutable class in java is a class whose objects, once created, cannot be modified and remains constant throughout its lifetime. Any attempt to change an immutable object results in the creation of a new object with the updated state and leaving the original unchanged.
 Examples of immutable classes is 
 1.	String
@@ -1348,4 +1350,33 @@ HOW TO CREATE AN IMMUTABLE CLASS?
 •	Perform deep copy in constructors/getters → Avoid external modification.
 •	Do not return mutable objects directly → Defensive copying.
 •	Return new instances for changes method that appears to modify object should return new instance.
-27. FINAL KEYWORD
+
+
+27. FINAL KEYWORD----------------------------------------------------------------
+Final keyword in java is a modifier that restricts modification or extension, depending on what its applied to. Final keyword enforces immutability 
+Why do we need it?
+It prevent modification on members which you don’t want to change in future.
+It improves code understanding and readability.
+Finals fields ensure safe publication in multi-threaded environments.
+>final variable
+A final variable is a variable whose value(for primitive) or reference (for objects) cannot be changed once initialized. Its essentially a constant or a fixed reference.
+It must be initialized at declaration or in constructor.
+For primitives the value cannot change. AND for objects the reference cannot change, but the object internal state can (unless the object itself in immutable).
+>final fields conventionally names in UPPER_SNAKE_CASE.
+Types of final variables.
+1.	Final instance variable
+2.	Final static variable(global constant)
+3.	Final local  variable
+4.	Final parameter(in method)
+
+>final methods
+A final method in a class cannot be overridden by subclass. It locks the method implementation, ensuring its behavior remains consistent in derived classes.
+The subclasses can call the final method but cannot redefine it. Static methods are implicitly final since they are not overridden
+Benefits:
+Ensure critical methods are not altered.
+Prevent subclasses from bypassing security checks.
+Enables jvm optimizations
+
+>final class
+A final class cannot be extended which  means no subclasses can be created. It is used to prevent inheritance, locking the class behavior and structure.
+
