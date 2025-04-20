@@ -1,3 +1,4 @@
+//this program shows the implementation of final keyword in variable, class and method
 package oops;
 final class FinalClass {
     final int finalVar = 10;
