@@ -1380,3 +1380,37 @@ Enables jvm optimizations
 >final class
 A final class cannot be extended which  means no subclasses can be created. It is used to prevent inheritance, locking the class behavior and structure.
 
+
+28. ENCAPSULATION------------------------------------------------------
+Encapsulation in the oops principle of wrapping data and methods that operate on that data within a single unit i.e. class, while restricting direct access to some the object components.
+Encapsulation encapsulate the fields into one single unit and resist direct access of that fields and promotes data hiding. Declaring fields as private to hide them from external access. Providing controlled access to these fields through public methods, typically getters and setters.
+It is like an ATM that hides internal working but provides controlled access via buttons.
+Why do we need it in code?
+Data hiding, control over data, flexibility, reusability, security, prevent unwanted modifications.
+Key Components 
+•	Private field: store the object state and are hidden from the external classes.
+•	Public methods: provide controlled access using setter and getter
+•	Class as a unit: combines data and behavior, ensuring they are tightly coupled.
+Rules to follow to achieve encapsulation;
+1.	Declare class variable as private = prevent direct access
+2.	Provide public getter and setter methods = controlled access
+3.	Add validation in setters(if needed) = ensure data integrity
+Use of getter(accessor) and setter(mutator) methods
+Getters and setters are public methods in a java class that provides controlled access to private fields:
+The getter method that retrieves the value of private field
+The setter method that modifies the value of private field
+Why to use it?
+It hides the internal representation of the class state, preventing direct access to the fields. It allow validation, logging or other logic when getting or setting values. It maintain flexibility and ensure data integrity. Supports immutability by providing getter without setters for read only fields.
+Naming conventions:
+Getter=> for any variable name age the getter is getAge()
+Setter=>for any variable name age the setter is setAge(..)
+Implementation::
+1.	Declare fields as private to restrict direct access.
+2.	Providing a public getter to read the fields value.
+3.	Providing a public setter(if modification is allowed) to update the fields value, often with validation.
+Types of getter and setter:::::
+1. standard getters and setters (mostly used).
+2. Boolean getters (for Boolean fields, getters often use isFieldName() instead of getFieldName() ).
+3. derived getters (return computed values instead of direct field values).
+4. no setter (for read only, provides only getter used for sensitive and immutable fields).
+5. custom setters (use descriptive names instead of setFieldName for specific actions).
