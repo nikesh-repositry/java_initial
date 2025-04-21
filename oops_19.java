@@ -1,3 +1,4 @@
+//this program shows the working of setter and getter for encapsulation
 package oops;
 class Car {
     private String car_name;
