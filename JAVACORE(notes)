@@ -5,7 +5,7 @@ On other hand JRE is majorly responsible for creating environment for code execu
 JVM on other hand specifies all the implementations and responsible to provide these implementations to JRE.
 
  
-1. JAVA BASICS
+1. JAVA BASICS--------------------------------------------------------------------
  
 This is very basic code in java to print hello world.
 Psvm is a short cut to write the public static void main
@@ -42,7 +42,7 @@ Print and println is used to print what is inside of braces the difference betwe
 
 
 	
-2. JAVA VARIABLES & DATA TYPES
+2. JAVA VARIABLES & DATA TYPES-----------------------------------------------------------------
 In java variables are called to store data inside it, A name for a  memory location that stores a value  .Whereas Data type tells what type of data is stored inside of variable.
 There are mainly two type of data types in java:
 1.	primitive data type is that which is predefined 
@@ -111,7 +111,7 @@ Well this rules are belongs to identifiers. A identifier is used to uniquely ide
 
 
 
-3. INPUTS IN JAVA
+3. INPUTS IN JAVA----------------------------------------------------------------------------------------
 import java.util.Scanner;
 
 public class MyProgram {
@@ -231,7 +231,7 @@ Scanner yo = new Scanner(System.in);
 
 
 
-4.  TYPE CASTING
+4.  TYPE CASTING----------------------------------------------------------------------------------------------
 Type casting in Java is the process of converting a value from one data type to another.
 This can be done in two ways:
 One is implicit conversion which is done automatically also known as implicit/widening casting=converting a smaller type to larger type.
@@ -273,7 +273,7 @@ Wfesgh
 Aweg
 STRING IN CW PLAYLIST
  
-10. CONDITIONAL STATEMENT
+10. CONDITIONAL STATEMENT--------------------------------------------------------------------------------------------
 Conditional statement are the basic control flow mechanism in java which execute when it satisfy the condition.
 If statement
 Syntax:
