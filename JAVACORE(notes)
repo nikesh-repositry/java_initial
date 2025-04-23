@@ -1456,3 +1456,25 @@ Super(args) call the parameterized constructor of the superclass.
 >if the superclass does not have a no-args constructor, then it throw a compilation error unless you explicitly call a parameterized constructor with super(args).
 
 <>you can call only one constructor of the parent class using one super() keyword because super must be the first statement in the constructor of the child class but you can make multiple constructor in child class and call different constructor from the parent class<>
+
+>>any method inside the child class can call the parent method directly if the name of methods are different. But if they have same method name then child class must use super.methodname();. Also super.fieldname() can access a superclass field, especially when the subclass has a field with the same name called as field hiding.
+
+>>super keyword is also used in inner class but some rules present here like in an inner class super refers to the superclass of the inner class , not the enclosing class. To access the enclosing class you would use enclosingClass.this .
+What super keyword can do:
+•	Can call the superclass constructor 
+•	Can access superclass members
+•	Work in multi level inheritance hierarchies
+•	Support polymorphism by allowing subclass to extend or customize superclass behavior while reusing it.
+ What super keyword cannot do:
+•	Cannot call grandparent class directly
+•	It cannot be used in static methods or blocks
+•	It cannot access private fields or methods of the superclass
+•	Cannot be used with this() in the same constructor
+•	Cannot call constructor outside constructors
+
+
+summary
+I.	Constructor calls (super() or super(args)) for initialization.
+II.	Method calls (super.methodName()) to reuse or extend behavior.
+III.	Field access (super.fieldName) to resolve naming conflicts.
+No super in Object Class: Since java.lang.Object is the root of all classes and has no superclass, super is meaningless in Object.
