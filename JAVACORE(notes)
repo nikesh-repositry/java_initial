@@ -1414,3 +1414,45 @@ Types of getter and setter:::::
 3. derived getters (return computed values instead of direct field values).
 4. no setter (for read only, provides only getter used for sensitive and immutable fields).
 5. custom setters (use descriptive names instead of setFieldName for specific actions).
+
+
+
+
+
+
+29. INHERITANCE---------------------------------------------------------------------------------------
+Inheritance in java is a mechanism where any new class inherits properties and behavior from an existing class.
+Superclass (parent class) == the class being inherited from
+Subclass (child class) == the class that inherits.
+Extends == keyword used to inherit
+IS-A relationship == it established an is-a relationship, where the subclass is a specialized version of the superclass.
+Why to use inheritance?
+1.	It reduce code duplication by defining common code in superclass once and reused by subclasses.
+2.	Enhance modularity by organizing code into hierarchical structures, improving readability and maintenance.
+3.	Support polymorphism and facilitates extensibility.
+
+
+
+Syntax:
+class Superclass {
+    // Fields, constructors, methods
+}
+class Subclass extends Superclass {
+    // inherits all non-private members
+    // Additional fields, constructors, methods
+    // Can override inherited methods
+}
+Super keyword
+The super keyword is a reference to the immediate superclass of the current class. The super keyword used by the child class work as the way to get something from the parent class.
+Main use fo the super keyword:
+I.	Calling a Superclass Constructor (super()).
+II.	Accessing Superclass Methods (super.methodName()).
+III.	Accessing Superclass Fields (super.fieldName).
+1.calling a superclass constructor::
+When creating a subclass object, the superclass must be initialized first. Java will automatically insert a call to the no-argument constructor(default constructor) of the parent class as the very first statement in the child class constructor. You can invoke the constructor of the  super class explicitly using super() or super(args) keyword.
+Super() calls the no args constructor of the superclass.
+Super(args) call the parameterized constructor of the superclass.
+>these super keywords must be the first statement in the subclass constructor.
+>if the superclass does not have a no-args constructor, then it throw a compilation error unless you explicitly call a parameterized constructor with super(args).
+
+<>you can call only one constructor of the parent class using one super() keyword because super must be the first statement in the constructor of the child class but you can make multiple constructor in child class and call different constructor from the parent class<>
