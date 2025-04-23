@@ -1,3 +1,4 @@
+//this program show the calling of parent members using super() keyword
 package oops;
 class parent{
     public parent(){
