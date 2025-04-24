@@ -1478,3 +1478,11 @@ I.	Constructor calls (super() or super(args)) for initialization.
 II.	Method calls (super.methodName()) to reuse or extend behavior.
 III.	Field access (super.fieldName) to resolve naming conflicts.
 No super in Object Class: Since java.lang.Object is the root of all classes and has no superclass, super is meaningless in Object.
+
+Method overriding 
+If subclass has a method m with the same signature as of the method present in the superclass, then method m overrides the method of the superclass.
+For instance method (overriding): must have the same method name, same number and type and order, same return type, same access modifier. It can be invoke through an object reference and consider as runtime polymorphism. 
+If the child class have override the parent class method then to call the parent class method you have to use super.methodname(); 
+>super can only be used within  an instance method of a subclass. You cannot use super in a static method or directly within the class declaration.
+For static method (shadowing, hiding not overriding): 
+You cannot override a static method in the way you override instance methods. Static methods are associated with the class itself, not with any specific instance of the class, so you typically call them using class name like myclass.myStaticMethod();. And there is no runtime polymorphism involved for static methods, so when you call a static method, the compiler determines which method to execute based on the reference type you are using.
