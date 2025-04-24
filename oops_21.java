@@ -31,9 +31,9 @@ class B extends A{
 }
 public class oops_21 {
     public static void main(String[] args) {
-        A obj1 = new A("this is ");
-        A obj2 = new B("THIS is ");
-        B obj3 = new B("THAT is ");
+        A obj1 = new A("this is "); 
+        A obj2 = new B("THIS is "); //reference type A(superclass) and object type B(subclass) concept used = upcasting
+        B obj3 = new B("THAT is "); //reference type B(subclass) and object type B(subclass)
 
         System.out.println("method overriding-------");
         obj1.instanceMethod();
