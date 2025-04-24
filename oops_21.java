@@ -1,3 +1,4 @@
+//this program shows the working of method overriding in inheritance
 package oops;
 class  A {
     String name;
