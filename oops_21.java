@@ -36,18 +36,19 @@ public class oops_21 {
         B obj3 = new B("THAT is "); //reference type B(subclass) and object type B(subclass)
 
         System.out.println("method overriding-------");
-        obj1.instanceMethod();
-        obj2.instanceMethod();
-        obj3.instanceMethod();
+        obj1.instanceMethod(); //call the parent instancemethod
+        obj2.instanceMethod(); //call the child class instancemethod
+        obj3.instanceMethod(); //-------""-------
 
         System.out.println("final method-----------");
-        obj1.finalMethod();
-        obj2.finalMethod();
-        obj3.finalMethod();
+        obj1.finalMethod(); //call parent final method
+        obj2.finalMethod(); //call the parent class final method through child class because child class B can access it 
+        //also final method cannot be override
+        obj3.finalMethod(); //---------------""-----------------
 
         System.out.println("static method hiding--------");
-        A.staicMethod();
-        B.staticMethod();
+        A.staicMethod(); //parent static method called
+        B.staticMethod(); //child class static method is callec
 
     }
 }
