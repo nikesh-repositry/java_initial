@@ -1486,3 +1486,5 @@ If the child class have override the parent class method then to call the parent
 >super can only be used within  an instance method of a subclass. You cannot use super in a static method or directly within the class declaration.
 For static method (shadowing, hiding not overriding): 
 You cannot override a static method in the way you override instance methods. Static methods are associated with the class itself, not with any specific instance of the class, so you typically call them using class name like myclass.myStaticMethod();. And there is no runtime polymorphism involved for static methods, so when you call a static method, the compiler determines which method to execute based on the reference type you are using.
+>Final method cannot be overridden in any case in java.
+NOTE:: the instance variable is not accessible by the static method as static method operates in class level context but instance method can directly access static members.
