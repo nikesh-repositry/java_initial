@@ -1488,3 +1488,47 @@ For static method (shadowing, hiding not overriding):
 You cannot override a static method in the way you override instance methods. Static methods are associated with the class itself, not with any specific instance of the class, so you typically call them using class name like myclass.myStaticMethod();. And there is no runtime polymorphism involved for static methods, so when you call a static method, the compiler determines which method to execute based on the reference type you are using.
 >Final method cannot be overridden in any case in java.
 NOTE:: the instance variable is not accessible by the static method as static method operates in class level context but instance method can directly access static members.
+
+Access modifiers and inheritance
+public: Inherited and accessible everywhere.
+protected: Inherited and accessible in the same package and subclasses (even in different packages).
+Default (package-private): Inherited and accessible only in the same package.
+private: Not inherited; inaccessible to subclasses directly (use getters/setters).
+
+Covariant return type<><><><>study it
+
+Constructor in inheritance
+A subclass constructor must call a superclass constructor in order to initialize it explicitly via super() or implicitly if the superclass has a no-arg constructor.
+Technically constructor are not inherited, but subclasses can call them using super() keyword.
+And if superclass have no arg constructor and sub class have not call that using super() then java provides a no-arg constructor. Which the subclass can call implicitly.
+<><> every class in java implicitly inherits from java.lang.Object, the root of the class hierarchy. Methods like toString(), equals() and hashcode() are inherited and can be overridden.  <><>
+<><>  final class cannot be extended and final method  cannot be overridden by subclasses.  <><>
+Polymorphism and inheritance-------
+Inheritance enables polymorphism, where a subclass object can be treated as a subclass type which allow:
+Upcasting: assigning a subclass object to a superclass reference.
+Dynamic method dispatch: the JVM calls the overridden method of the actual object type at runtime.
+Types of inheritance in java
+Java supports 3 types of inheritance as multiple inheritance is not directly supported for classes to avoid complexity.
+1.SINGLE INHERITANCE
+One subclass extends one superclass.
+
+2. MULTILEVEL INHERITANCE
+A class extends a subclass forming a chain like (A->B->C).
+3. HIERARCHICAL INHERITANCE
+Multiple classes extend the same superclass.
+4. MULTIPLE INHERITANCE
+Java does not allow a class to extend multiple classes to avoid the diamond problem(ambiguity when two superclasses defines the same method). Multiple inheritance means there are two class and third class is trying to inherit from both the superclass.
+But this can be achieve using interfaces like
+(class C implements A, B)
+DIAMOND PROBLEM=
+This occurs in multiple inheritance when a class inherits confliction methods from two superclasses.
+This can be avoid by allowing only single inheritance for classes. And resolving interface method conflicts explicitly (since java 8 with default methods)
+
+>In short a subclass 
+can inherits all public and protected members of the superclass and default (package-private) members (if in the same package).
+Cannot inherits private members directly and constructor but can be called via super().
+>overriding is redefining a superclass method with the same signature  in the subclass.
+>covariant return type introduce in java 5 that allow a subclass method to override a superclass method with a more specific return type i.e. subtype of the original return type.
+>abstract classes are designed for inheritance, providing a partial implementation that subclasses complete.
+>classes can implement multiple interfaces, inheriting their abstract methods.
+
