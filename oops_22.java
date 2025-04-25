@@ -1,3 +1,4 @@
+//this program shows the inheritance with its types
 package oops;
 class animal {   //root parent class
     void eat(){
