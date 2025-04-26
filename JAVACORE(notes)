@@ -1,4 +1,4 @@
-JAVA
+⁸JAVA
 D:\java_initials\java_essentials  (all files of learning is saved here] 
 JDK is primarily used for code execution and has prime functionality of development.	
 On other hand JRE is majorly responsible for creating environment for code execution.	
@@ -272,6 +272,12 @@ int roundedPrice = (int) price;
 Wfesgh
 Aweg
 STRING IN CW PLAYLIST
+
+
+
+
+
+
  
 10. CONDITIONAL STATEMENT--------------------------------------------------------------------------------------------
 Conditional statement are the basic control flow mechanism in java which execute when it satisfy the condition.
@@ -344,7 +350,12 @@ switch (expression) {
         break;
     default: // Optional: Code to be executed if no case matches
 }
-11. BREAK AND CONTINUE 
+
+
+
+
+
+11. BREAK AND CONTINUE-----------------------------------------------
 The break and continue statement in java is used to alter the normal execution of conditional statement. It help to gain control in execution of conditional statement like early termination and skipping iterations.
 Break;
 Break sparingly to exit a loop when a specific condition is met, especially when continuing the loop would be inefficient or incorrect.
@@ -356,7 +367,10 @@ The continue statement is used within loops to skip the current iteration and pr
 
 
 
-12. CONDITIONAL STATEMENT CONTINUE
+
+
+
+12. CONDITIONAL STATEMENT CONTINUE-------------------------------------
 Loop statements are fundamental control flow mechanisms in Java that enable the repeated execution of a block of code. They are essential for automating repetitive tasks and processing collections of data
 
 FOR LOOP
@@ -402,7 +416,17 @@ do {
 do-while loop is similar to the while loop, but the code block is executed at least once before the condition is 1  checked. This guarantees that the loop body runs at least one time
 
 
-13. OOPS 
+
+
+
+
+
+
+
+
+
+
+13. OOPS----------------------------------------------------
 Oops is a programming paradigm that organizes code into object data structure that contain both data(arrtibute) and behavior(methods).
 Reasons to use oops:
 1.	Organized
@@ -655,7 +679,14 @@ Object properties represent the state of an object. They are defined using insta
 Object Class Methods:
 Object class methods define the behavior of an object. They are written as instance methods (that operate on individual object data) or static methods (that operate at the class level). These methods perform actions using the object's properties. For example, a displayInfo() method in a Person class can print the name and age, demonstrating how methods use properties to define behavior. 
 
-16. METHODS
+
+
+
+
+
+
+
+16. METHODS-----------------------------------------------------------------
 Methods are the block of code which perform certain task
 And defined in a class. Values are passed into methods and method is only invoked when it called. Methods are used where a certain task need to be performed many times and it promotes reusability, clarity etc.
 
