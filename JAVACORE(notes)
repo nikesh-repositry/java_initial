@@ -1563,3 +1563,58 @@ Cannot inherits private members directly and constructor but can be called via s
 >abstract classes are designed for inheritance, providing a partial implementation that subclasses complete.
 >classes can implement multiple interfaces, inheriting their abstract methods.
 
+
+
+
+
+
+30. POLYMORPHISM--------------------------------------------------------------------
+Poly means many and morph means forms which combined and state the ability of an object to behave differently in different situations.
+It allows object of different classes to be treated as objects of a common type, enabling a single interface to represent different underlying  implementations.
+In java polymorphism is primarily achieved through inheritance, interfaces, method overriding, method overloading
+Why is it important?
+•	Allow code to work with different types through a common interface or superclass.
+•	New subclasses or  implementations can be added without modifying existing code.
+•	Hides implementation details focusing on what objects do rather than how they do it.
+There are two main types of polymorphism which is static and dynamic polymorphism.
+1. compile time / static polymorphism 
+This is achieved through method overloading. The compile time polymorphism occurs when the method to be called is determined by the compiler at compile time based on the method signature(name and parameter types).
+Method overloading allows a class to have multiple methods with the same name but different parameter list like different number, types or order of parameters. The compiler decides which method to call based on the arguments provided.
+Rules of method overloading:
+•	Method must have the same name
+•	Method must differ in 
+1.1.	Number of parameters
+1.2.	Types of parameters
+1.3.	Order of parameter types
+•	Return type alone is not sufficient to differentiate overloaded methods.
+•	Access modifiers or exceptions thrown do not affect overloading.
+Operator overloading
+Limited in java as java does not support user-defined operator overloading like c++. However, some operator for example + exhibit polymorphic behavior.
+For numbers 2+3=5
+For strings “hello”+”kitty”=hellokitty
+This is a form of compile-time polymorphism, as the behavior of + is determined by the operand types at compile time.
+2. runtime / dynamic polymorphism
+Runtime polymorphism is the ability of a program to decide which method to call at runtime, based on the actual object type, not the variable’s declared type.
+This is achieved through method overriding, 
+inheritance or interface = a superclass or interface provides a common type, and subclasses or implementing classes provide the actual behavior.
+dynamic method dispatch= the jvm resolves the method call at runtime by looking at the object actual type.
+Rules of method overriding:
+•	The method  must have the same signature(name, parameters, return type) as in the superclass.
+•	The access modifier must be same or less restrictive.
+•	The method must not throw new or broader checked exceptions.
+•	Use the  @override annotation to ensure correct overriding.
+•	The return type can be a covariant subtype(since java 5).
+•	Method marked final or static cannot be overridden (static method can be hidden, not overridden).
+Polymorphism with data members
+>variables are not polymorphic in java only methods are.
+>variable access is determined by the reference type, not the object type.
+Polymorphism in read world applications like java collection framework, jdbc api, gui event handling.
+
+upcasting
+upcasting is when a subclass object is assigned to a superclass or interface reference. Its safe and implicit because a subclass is a superclass or interface type.
+Why use it?
+•	Enables polymorphism by allowing the reference type to be more general.
+•	Facilitates collections of mixed types
+downcasting
+
+
