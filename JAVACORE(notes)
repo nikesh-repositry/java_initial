@@ -1653,3 +1653,36 @@ Since java 5 overridden methods can return a subtype of the superclass return ty
 >final classes: cannot be extended, limiting inheritance-based polymorphism.
 
 
+
+
+
+
+
+
+
+
+31. ENCAPSULATION
+Discussed above about setter and getter and more which not will be discuss later
+
+
+
+
+
+
+
+
+32. ABSTRACTION-------------------------------------------------------------------
+One of the four pillars of oops in java, alongside encapsulation, inheritance and polymorphism. It is the process of hiding complex implementation details and exposing only the essential features or behavior of an object to the user.
+Abstraction allow developers to focus on what an object does rather than how it does it.
+In java abstraction is primarily achieved through:
+1.	Abstract class: partially implemented classes that define a blueprint for subclasses.
+2.	Interfaces: fully abstract contracts that specify behavior without implementation.
+Key characteristics:
+•	Hide implementation like internal logics.
+•	Exposed interface like only necessary methods or behavior are visible to the user.
+•	Promotes generalization by defining common behavior for related classes.
+Why to use it?
+Reduces complexity by simplifying interaction by hiding unnecessary details, making systems easier to understand.
+Improves maintainability, enhances modularity, promotes reusability, improve designs etc
+
+
