@@ -1685,4 +1685,12 @@ Why to use it?
 Reduces complexity by simplifying interaction by hiding unnecessary details, making systems easier to understand.
 Improves maintainability, enhances modularity, promotes reusability, improve designs etc
 
+1. abstract classes
+An abstract class is a class that cannot be instantiated directly and serves as a blueprint for subclasses. It is defined with abstract keyword(non-access modifier). And it can contain abstract methods, concrete methods, fields(instance and static variables) and constructors.
+Abstract classes are ideal when you want to provide a partial implementation and share common code among related classes.
+The abstract class must be extended by a subclass
+Subclass must implement all abstract methods(unless its also abstract)
+Abstract class is a restricted class that cannot be used to create objects in order to access it, it must be inherited from another class. As no object of abstract class can be.
+Abstract method can only be used in an abstract class and it does ot have a body. The body is provided by the subclass.
+
 
