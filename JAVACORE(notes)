@@ -1685,6 +1685,11 @@ Why to use it?
 Reduces complexity by simplifying interaction by hiding unnecessary details, making systems easier to understand.
 Improves maintainability, enhances modularity, promotes reusability, improve designs etc
 
+Level of abstraction
+1.	Full abstraction (interfaces pre-java 8)
+2.	Partial abstraction (abstract classes)
+3.	Zero abstraction (concrete classes)
+
 1. abstract classes
 An abstract class is a class that cannot be instantiated directly and serves as a blueprint for subclasses. It is defined with abstract keyword(non-access modifier). And it can contain abstract methods, concrete methods, fields(instance and static variables) and constructors.
 Abstract classes are ideal when you want to provide a partial implementation and share common code among related classes.
