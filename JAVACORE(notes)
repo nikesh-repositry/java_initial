@@ -971,7 +971,13 @@ public static void main(String[] args)
 Command line arguments are passed to the main method of java program. args is array which holds the command line arguments passed during the program execution and the String stores the command line arguments. The first argument is arg[0] then arg[1] and so on and if no argument is passed the args array is empty and length is 0.
 All arguments which are passed here have the data type of string and it can be converted explicitly using any method like Integer.parseInt(str).
 
-17. SCOPE
+
+
+
+
+
+
+17. SCOPE---------------------------------------------------------------------------------------
 scope refers to the region of the program where a variable, method, or class is accessible.
 Several types of scope
 i.	Class Scope (Instance Variables)
@@ -1080,7 +1086,11 @@ protected → Package + Subclasses
 default → Package only
 private → Class only
 
-20. WRAPPER CLASS
+
+
+
+
+20. WRAPPER CLASS----------------------------------------------------------------------------
 Definition= A wrapper class is a class which wrap a primitive data type into an object.
 So why is this concept in java why do we study this::
 Well java is not consider as 100% object oriented language due to static method and variables and  primitive data type like int, char, Booleans etc but wrapper class encapsulates these primitive types (which are simple and raw values stored in memory for efficiency) into object because there are times when you need these primitives to behave like an object , these wrapper classes are used in arraylist, generics and collections etc these are designed to work with objects.
@@ -1144,7 +1154,16 @@ Integer.toBinaryString(10); // "1010"
 Integer.toHexString(255); // "ff"
 
 >wrapper class consume more memory than primitives
-21. GARBAGE COLLECTION
+
+
+
+
+
+
+
+
+
+21. GARBAGE COLLECTION-----------------------------------------------------------------------------------------
 Garbage collection in java is an automatic memory management process which is handled by the JVM, what it actually do is identifies object that are no longer in use by the program and reclaims that runtime unused memory then makes that memory available for new object allocations.
 In short it cleans up the unused objects known as garbage. In java developers don’t have to manually allocate or deallocate memory like in c or c++ instead, JVM garbage collector takes care those unused memory.
 Why do we need it
@@ -1187,7 +1206,16 @@ Performance issues
 Security risks
 Exception handling
 
-23. PACKAGES
+
+
+
+
+
+
+
+
+
+23. PACKAGES--------------------------------------------------------------------------------------------------
 A package in java is a mechanism for organizing related classes, interfaces and other types into a namespace.
 Need of packages
 •	Namespace management
@@ -1224,7 +1252,7 @@ File location: ./com/mycompany/mypackage/MyClass.java
 
 
 
-24. INNER CLASS
+24. INNER CLASS------------------------------------------------------------------------------
 The inner class is a class which is defined inside of any another class.
 Why to use inner class?
 >it’s a way to logically group classes that are closely related.
