@@ -1616,5 +1616,12 @@ Why use it?
 •	Enables polymorphism by allowing the reference type to be more general.
 •	Facilitates collections of mixed types
 downcasting
+downcasting is when a superclass or interface reference is cast to a subclass type. Its explicit and potentially unsafe, requiring a type check eg using instanceof
+Dynamic method dispatch
+Dynamic method dispatch is the process by which the JVM determines at runtime which overridden method to call on the actual object type, not the reference type. And its working includes the object virtual table (vtable) used by JVM to resolve the method call at runtime. Only overridden methods are dispatched dynamically.
+Covariant return type
+Since java 5 overridden methods can return a subtype of the superclass return type.
+>final methods: cannot be overridden, preventing polymorphic behavior for that method.
+>final classes: cannot be extended, limiting inheritance-based polymorphism.
 
 
