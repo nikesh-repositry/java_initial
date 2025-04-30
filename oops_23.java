@@ -1,3 +1,4 @@
+//this is basic plate of abstract class and abstract method
 package oops;
 //abstract class ClassName {
 //    // Fields
