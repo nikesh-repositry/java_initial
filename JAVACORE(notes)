@@ -1700,3 +1700,31 @@ Abstract method can only be used in an abstract class and it does ot have a body
 
 Upcasting can be done with abstract class and methods. Which means assigning a reference of a subclass type to a reference of its superclass type. 
 
+2. interfaces
+An interface is a fully abstract type that defines a contract of methods that implementing classes must provide. Since java 8 interfaces can include:
+Abstract method, default methods, static methods, constants
+
+Key rules:
+1.	All methods are public abstract by default
+2.	Variables are public static final
+3.	Classes implement interfaces can implement multiple
+4.	No constructor in interface
+Why to use it?
+When you want to define a pure contract without implementation 
+When you need multiple inheritance( a class can implement multiple interfaces but extend only one class).
+
+Aspect	Abstract Class	Interface
+Instantiation	Cannot be instantiated	Cannot be instantiated
+Methods	Abstract + concrete methods	Abstract, default, static methods (Java 8+)
+Fields	Instance/static fields	Only constants (public static final)
+Inheritance	Single inheritance (extends)	Multiple inheritance (implements)
+Constructors	Can have constructors	No constructors
+Use Case	Share code/state in is-a relationship	Define behavior for unrelated classes
+Example	AbstractList, HttpServlet	List, Comparable
+
+Default methods in interfaces allow some implementation, reducing the gap between abstract classes and interfaces. However, abstract classes are better for stateful hierarchies, while interfaces excel for flexible contracts.
+Types of abstraction:
+1.	Data abstraction
+2.	Functional abstraction
+3.	Behavioral abstraction
+
