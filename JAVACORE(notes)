@@ -1596,6 +1596,7 @@ Cannot inherits private members directly and constructor but can be called via s
 
 
 
+
 30. POLYMORPHISM--------------------------------------------------------------------
 Poly means many and morph means forms which combined and state the ability of an object to behave differently in different situations.
 It allows object of different classes to be treated as objects of a common type, enabling a single interface to represent different underlying  implementations.
