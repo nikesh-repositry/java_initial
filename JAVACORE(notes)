@@ -687,6 +687,7 @@ Object class methods define the behavior of an object. They are written as insta
 
 
 
+
 16. METHODS-----------------------------------------------------------------
 Methods are the block of code which perform certain task
 And defined in a class. Values are passed into methods and method is only invoked when it called. Methods are used where a certain task need to be performed many times and it promotes reusability, clarity etc.
