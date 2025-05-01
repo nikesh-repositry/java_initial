@@ -5,6 +5,7 @@ On other hand JRE is majorly responsible for creating environment for code execu
 JVM on other hand specifies all the implementations and responsible to provide these implementations to JRE.
 
  
+
 1. JAVA BASICS--------------------------------------------------------------------
  
 This is very basic code in java to print hello world.
