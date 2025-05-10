@@ -203,6 +203,7 @@ Radix(), reset(), hasNext() and more.
 
 
 
+
 Program to read character from the input
 Scanner yo = new Scanner(System.in);
         System.out.println("Enter the text ");
